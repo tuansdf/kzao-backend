@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_bubble_links",
+  "info": {
+    "displayName": "bubble-link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

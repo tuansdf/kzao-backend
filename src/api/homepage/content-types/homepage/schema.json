@@ -15,7 +15,12 @@
     "calendly_url": {
       "type": "string",
       "required": true,
-      "regex": "^(http|https)\\:\\/\\/[a-zA-Z0-9\\-\\.]+\\.[a-zA-Z]{2,}(\\/\\S*)?$"
+      "regex": "^(http|https)://[a-zA-Z0-9]+([\\-\\.]{1}[a-zA-Z0-9]+)*\\.[a-zA-Z]{2,5}(:[0-9]{1,5})?(\\/.*)?$"
+    },
+    "transition_duration_in_ms": {
+      "type": "integer",
+      "required": true,
+      "default": 1000
     },
     "desktop_bubble_links": {
       "type": "component",
@@ -28,13 +33,8 @@
       "type": "component",
       "repeatable": true,
       "component": "homepage.bubble-link",
-      "min": 1,
-      "required": true
-    },
-    "transition_duration_in_ms": {
-      "type": "integer",
       "required": true,
-      "default": 1000
+      "min": 1
     }
   }
 }

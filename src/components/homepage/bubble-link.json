@@ -12,7 +12,7 @@
     },
     "url": {
       "type": "string",
-      "regex": "^(http|https)\\:\\/\\/[a-zA-Z0-9\\-\\.]+\\.[a-zA-Z]{2,}(\\/\\S*)?$",
+      "regex": "^(http|https)://[a-zA-Z0-9]+([\\-\\.]{1}[a-zA-Z0-9]+)*\\.[a-zA-Z]{2,5}(:[0-9]{1,5})?(\\/.*)?$",
       "required": true
     },
     "icon": {
